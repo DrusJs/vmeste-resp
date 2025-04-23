@@ -224,12 +224,12 @@ button {
 }
 
 .swiper-button-prev {
-    left: 0;
+    left: 6px;
 }
 
 .swiper-button-next {
     transform: rotate(180deg);
-    right: 0;
+    right: 6px;
 }
 
 .swiper-button.swiper-button--blue {
@@ -2115,7 +2115,8 @@ input:checked + .input-checkbox::before {
         padding: 40px 30px 40px;
     }
 
-    .support-seciton__swiper-item {
+    .support-seciton__swiper-item,
+    .news-section__swiper-item {
         max-width: 100%;
     }
 }
