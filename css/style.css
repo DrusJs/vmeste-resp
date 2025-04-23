@@ -98,13 +98,6 @@ button {
     cursor: pointer;
 }
 
-.bg {
-    background-image: url(../images/bg.svg);
-    background-repeat: no-repeat;
-    background-size: 1278px;
-    background-position: center top 450px;
-}
-
 .container {
     margin: 0 auto;
     max-width: 1360px;
@@ -193,11 +186,12 @@ button {
     align-items: center;
     justify-content: flex-start;
     overflow: auto;
-    padding-bottom: 10px;
+    padding: 0 6px 10px;
 }
 
 .tab-button {
     width: 216px;
+    min-height: 60px;
     min-width: 140px;
     padding: 5px 8px 16px 7px;
     background-color: var(--color-white);
@@ -549,6 +543,7 @@ input:checked + .input-checkbox::before {
 .swiper-item__img {
     border-radius: 10px;
     width: 100%;
+    object-fit: cover;
 }
 
 .swiper-item__text-wrapper {
@@ -783,7 +778,9 @@ input:checked + .input-checkbox::before {
 /* social-media-section */
 
 .social-media-section {
-    margin-top: 110px;
+    margin-top: 70px;
+    padding-top: 70px;
+    border-top: 1px solid var(--color-black70);
 }
 
 .social-media-section .flex-container {
@@ -1175,6 +1172,11 @@ input:checked + .input-checkbox::before {
 .main-form__buttons-row, .main-form__inputs-wrapper {
     display: flex;
     gap: 13px;
+}
+
+.main-form__buttons-row.buttons-price .input {
+    max-width: fit-content;
+    white-space: nowrap;
 }
 
 .main-support__form-row:last-child .main-form__inputs-wrapper {
@@ -2025,6 +2027,12 @@ input:checked + .input-checkbox::before {
     .hero-section .container {
         gap: 40px;
     }
+    .main-support__form {
+        padding: 20px 16px 20px;
+    }
+    .main-support_requisite-items-wrapper {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 640px) {
@@ -2084,6 +2092,11 @@ input:checked + .input-checkbox::before {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .main-form__buttons-row,
+    .main-form__inputs-wrapper {
+        flex-wrap: wrap;
+    }
     
 }
 
@@ -2100,5 +2113,9 @@ input:checked + .input-checkbox::before {
     }
     .support-section__swiper {
         padding: 40px 30px 40px;
+    }
+
+    .support-seciton__swiper-item {
+        max-width: 100%;
     }
 }
