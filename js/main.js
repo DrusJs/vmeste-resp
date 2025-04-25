@@ -36,7 +36,6 @@ const swiperMain = new Swiper(".support-section__swiper", {
     }
 });
 
-
 const swiperNews = new Swiper(".news-section__swiper", {
     slidesPerView: 1,
     centeredSlides: true,
@@ -55,6 +54,16 @@ const swiperNews = new Swiper(".news-section__swiper", {
             slidesPerView: 2,
             centeredSlides: false,
         }
+    }
+});
+
+const swiperPartners = new Swiper(".partners-section__swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 50,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     }
 });
 

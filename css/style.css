@@ -69,6 +69,7 @@
 
 body {
     font-family: 'Gilroy';
+    padding: 0 70px;
 }
 
 input {
@@ -100,8 +101,8 @@ button {
 
 .container {
     margin: 0 auto;
-    max-width: 1360px;
-    padding: 0 50px;
+    max-width: 1600px;
+    padding: 0 12px;
     width: 100%;
     display: flex;
 }
@@ -234,6 +235,21 @@ button {
 
 .swiper-button.swiper-button--blue {
     background-color: rgba(145, 185, 224, 0.4);
+}
+.partners-section__swiper {
+    margin-top: 60px;
+    max-width: 1060px;
+    padding: 0 30px;
+    width: 100%;
+}
+.partners-section__swiper .swiper-wrapper {
+    align-items: center;
+}
+.partners-section__swiper .swiper-slide {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .input-wrapper {
@@ -1933,6 +1949,12 @@ input:checked + .input-checkbox::before {
     .partners-section .flex-container {
         justify-content: center;
         gap: 40px;
+    }
+    body {
+        padding: 0;
+    }
+    .container {
+        padding: 0 30px;
     }
 }
 
