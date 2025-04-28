@@ -1865,7 +1865,7 @@ input:checked + .input-checkbox::before {
 }
 
 .nav {
-    max-width: 920px;
+    max-width: 760px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -1875,7 +1875,7 @@ input:checked + .input-checkbox::before {
 .footer-list {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 220px;
     width: 100%;
 }
 
