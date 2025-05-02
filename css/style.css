@@ -654,7 +654,7 @@ input:checked + .input-checkbox::before {
     margin-top: 50px;
 }
 .news-grid-section {
-    padding: 60px 0;
+    padding: 60px 0 0;
 }
 
 .news-grid-section .title {
