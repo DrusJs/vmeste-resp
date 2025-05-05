@@ -739,6 +739,8 @@ input:checked + .input-checkbox::before {
 .news-card-preview {
     width: 260px;
     min-width: 260px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .news-card-preview img {
@@ -799,6 +801,8 @@ input:checked + .input-checkbox::before {
 
 .news-card-link {
     margin-top: auto;
+    width: fit-content;
+    padding: 4px 40px;
 }
 
 .news-pagination {
