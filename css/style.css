@@ -1168,6 +1168,10 @@ input:checked + .input-checkbox::before {
     max-width: 1098px;
 }
 
+.whooneedhelp-info-section .title {
+    margin-bottom: 50px;
+}
+
 .info-card__container {
     display: flex;
     flex-direction: column;
